@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans",sans-serif; 
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: grey;
+}
+.section1 {
+  background: darkgrey;
+}
+.section2 {
+  background:black;
+  color: white;
+ 
+}
+.section3 {
+    background:  rgb(71, 69, 69);
+    color: white;
+}
+.section5 {
+  background: black;
+  color: white;
+}
+button {
+  margin-top: 50px;
+}
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+nav ul li{
+  margin-right: 20px;
+}
+header {
+  padding: 12% 0;
+  background: lightgrey;
+  margin: 0 auto;
+}
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+  margin: 0 20px 0 20px;
+}
+
+@media only screen and (min-width: 720px){
+  
+
+div {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+section {
+  margin: 0 40px 0 40px;
+}
+.section1 {
+  width: 50%;
+  margin: 0 0 0 40px;
+}
+.section2 {
+  width: 50%;
+  margin: 0 40px 0 0;
+
+}
+}
+
