@@ -5,45 +5,71 @@
 }
 
 body {
-  font-family: "Open Sans",sans-serif; 
+  font-family: "Oswald", sans-serif; 
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  background: grey;
+  background-image: linear-gradient(rgb(49, 12, 12),black);
 }
-.section1 {
-  background: darkgrey;
-}
-.section2 {
-  background:black;
-  color: white;
- 
-}
-.section3 {
-    background:  rgb(71, 69, 69);
-    color: white;
-}
-.section5 {
-  background: black;
-  color: white;
-}
-button {
+.workLink {
+  text-decoration: none;
   margin-top: 50px;
+  color: black;
+  align-self: flex-start;
+  margin-left: 50px;
+}
+.workLink:hover {
+  background-color: rgb(49, 12, 12);
+  color: white;
+
+}
+.workLink h3:hover {
+  box-shadow: 2px 2px 1.5px .75px rgb(71, 69, 69);
+  border-radius: 2px;
+}
+.workLink h3 {
+  border: 3px solid black;
+  max-width: 200px;
+  padding:7px;
+  box-shadow: 2px 2px 1.5px .75px rgb(49, 12, 12);
+  border-radius: 2px;
+}
+p {
+  font-family: "Quattrocento", serif;
+  padding: 20px;
+  line-height: 1.5em;
 }
 nav,
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  color: white;
+  background:  rgb(71, 69, 69);
+}
+footer {
+  text-align: center;
+}
+section h4{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 25px;
+    letter-spacing: 3px;
+}
+section li {
+  text-align:left;
+  padding: 25px;
 }
 
+section ul {
+  list-style: none;
+}
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  border-bottom: 25px solid rgb(49, 12, 12)
 }
 nav ul {
   display: flex;
@@ -53,38 +79,100 @@ nav ul {
 nav ul li{
   margin-right: 20px;
 }
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover, nav ul li a:hover{
+  color: rgb(49, 12, 12);
+  cursor: pointer;
+}
 header {
   padding: 12% 0;
-  background: lightgrey;
-  margin: 0 auto;
+  margin: 25px auto 0 auto;
+  border-left: 10px solid rgb(49, 12, 12);
+  border-right: 10px solid rgb(49, 12, 12);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-image: url('./close-up-blank-old-concrete-wall_23-2147856094.jpg');
+  background-size: cover;
+  width: 97%;
+}
+header h1, header h2 {
+  align-self: flex-start;
+  margin-left: 50px;
+}
+header h1 {
+  font-size: 3em;
 }
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
-  margin: 0 20px 0 20px;
+  margin: 25px 20px 25px 20px;
+  background:  grey;
+  text-align: left;
+}
+img {
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0;
+  padding: 0;
 }
 
+.section3 {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.section3 iframe {
+   border: 3px solid rgb(194, 191, 191);
+   height: 100%;
+   left: 0;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+.projectsHeader {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./close-up-blank-old-concrete-wall_23-2147856094.jpg);
+  background-size: cover;
+  min-height: 50px;
+  max-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
 @media only screen and (min-width: 720px){
-  
-
-div {
+  div {
   display: flex;
   margin: 0;
   padding: 0;
-
-}
-section {
-  margin: 0 40px 0 40px;
-}
-.section1 {
+  }
+  section {
+  margin: 25px 40px 25px 40px;
+  }
+  .section1 {
   width: 50%;
-  margin: 0 0 0 40px;
-}
-.section2 {
+  margin: 25px 0 0 40px;
+  border-right: 5px solid rgb(49, 12, 12);
+  }
+  .section2 {
   width: 50%;
-  margin: 0 40px 0 0;
-
-}
+  margin: 25px 40px 0 0;
+  border-left: 5px solid rgb(49, 12, 12);
+  }
+  .projectsHeader {
+  width: 80%;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./close-up-blank-old-concrete-wall_23-2147856094.jpg);
+  background-size: cover;
+  }
 }
 
