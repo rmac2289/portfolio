@@ -15,8 +15,7 @@ body {
 .workLink {
   text-decoration: none;
   margin-top: 50px;
-  align-self: flex-start;
-  margin-left: 130px;
+  align-self: center;
   color: black;
   background: #e1b382
 }
@@ -42,19 +41,19 @@ p {
 }
 #publicsafety {
   font-size: 18px;
-  align-self: flex-start;
+ 
 }
-#publicsafety > span {
+#publicsafety > a {
   line-height: 3em;
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Oswald", sans-serif;
   text-decoration: underline;
+  color: #12343b;
 }
 .public {
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin:100px auto 100px auto;
   line-height: 1.5em;
   }
 .public > h5 {
@@ -66,9 +65,6 @@ footer {
   padding: 1% 0;
   color: black;
   background: #c89666
-}
-footer {
-  text-align: center;
 }
 section h4{
     text-align: center;
@@ -86,17 +82,19 @@ nav {
 }
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   list-style: none;
+  align-items: center;
+  font-size: 1.3em
 }
 nav ul li{
-  margin-right: 20px;
+  margin-right: 75px;
 }
 nav ul li a{
   text-decoration: none;
   color: black;
 }
-nav ul li:hover, nav ul li a:hover{
+nav ul li a:hover{
   color: #2d545e;
   cursor: pointer;
 }
@@ -108,7 +106,7 @@ header {
   align-items: center;
   width: 100%;
   max-height: 400px;
-  color: white;
+  color: ivory;
   background-image: url('./IMG_4396.JPG');
   background-size: cover;
   opacity: .9;
@@ -116,15 +114,18 @@ header {
 }
 header h1, header h2 {
   align-self: flex-start;
-  margin-left: 130px;
+  margin-left: 100px;
 }
 header h1 {
 
-  font-size: 3em;
+  font-size: 3.5em;
+}
+header h2 {
+  font-size: 1.5em;
 }
 section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 3% 0;
   margin: 25px 100px 25px 100px;
   text-align: left;
   background: #e1b382;
@@ -138,24 +139,18 @@ img {
 }
 
 .section3 {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-  box-shadow: 5px 5px 10px #c89666;
-  border-radius: 2%;
+ display: flex;
+ flex-direction: column;
+ padding: 0 0;
+ box-shadow: 1px 1px 1px 1px #c89666;
+}
 
+.section3 div img {
+  max-height: 100%;
+  max-width: 100%;
+  border: 2px solid white;
 }
  
-.section3 iframe {
-   
-   height: 100%;
-   left: 0;
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-  
-   
-}
 .projectsHeader {
   width: 80%;
   margin-left: auto;
@@ -167,16 +162,53 @@ img {
   justify-content: center;
   font-size: 1.5em;
   background: none;
-  color: white;
+  color: ivory;
+  box-shadow: 1px 1px 3px 3px #c89666;
 }
-.section1 {
+.public {
+  padding: 0;
+  color: black;
+}
+.section1, .section2 {
   font-size: 18px;
 }
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+footer ul li {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+footer ul li a img:hover{
+  box-shadow: 1px 1px 3px 1px #12343b;
+  cursor: pointer;
+  height: 43px;
+  width: 43px;
+}
+footer ul li a img {
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  }
+  footer ul h3 {
+    font-size: 1.5em;
+  }
+  .section4,.section5 {
+    display: none;
+  }
 @media only screen and (min-width: 720px){
   div {
   display: flex;
   margin: 0;
   padding: 0;
+  }
+  .workLink {
+    margin-left: 130px;
+    align-self: flex-start;
   }
   section {
   margin: 25px 100px 25px 100px;
@@ -184,13 +216,19 @@ img {
   .section1 {
   width: 50%;
   margin: 35px 0 0 100px;
-  border-right: 5px solid #12343b;
+  border-right: 5px solid #c89666;
+  border-bottom: 10px solid #c89666;
+  border-top: 10px solid #c89666;
+  border-left: 10px solid #c89666;
   
   }
   .section2 {
   width: 50%;
   margin: 35px 100px 0 0;
-  border-left: 5px solid #12343b;
+  border-left: 5px solid #c89666;
+  border-top: 10px solid #c89666;
+  border-right: 10px solid #c89666;
+  border-bottom: 10px solid #c89666;
 
   }
   .projectsHeader {
@@ -198,6 +236,7 @@ img {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  
   }
   #publicsafety {
     font-size: 18px;
@@ -212,6 +251,9 @@ img {
   .public > h5 {
     align-self: flex-start;
     margin-left: 100px;
+}
+  header h1, header h2 {
+    margin-left: 130px;
 }
 }
   
