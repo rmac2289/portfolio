@@ -46,13 +46,26 @@ p {
   font-size: 18px;
  
 }
-.public h3 a {
-  font-size: 35px;
+.public h3 {
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    color: #12343b;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    
+}
+.public p a {
+  font-size: 25px;
   font-family: "Oswald", sans-serif;
-  text-decoration: underline;
+  text-decoration: none;
   color: #12343b;
   margin-left: 25px;
   cursor: pointer;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.public p a:hover {
+  text-decoration: underline;
 }
 .public {
   text-align: left;
@@ -150,6 +163,8 @@ img {
   max-height: 100%;
   max-width: 100%;
   border: 2px solid white;
+  margin-top: 0;
+  padding-top: 0;
 }
  
 .projectsHeader {
