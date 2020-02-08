@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  background: white;
+  background: radial-gradient(white, white,rgb(245, 238, 226));
 }
 .workLink {
   text-decoration: none;
@@ -71,10 +71,16 @@ nav,
 footer {
   padding: 1% 0;
   color: black;
-  background: linear-gradient(to right,#c89666 1%,white,white);
-  height: 70px;
   
-}
+  }
+footer {
+    border-top: 3px solid #12343b;
+    background: linear-gradient(rgb(245, 238, 226),white,white,white);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+
+  }
 section h4{
     text-align: center;
     font-size: 2em;
@@ -82,11 +88,15 @@ section h4{
     letter-spacing: 2.5px;
 }
 nav {
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  border-bottom: 3px solid #12343b;
+  background: linear-gradient(white,white,white,rgb(245, 238, 226));
+  
   
   
 }
@@ -120,6 +130,7 @@ header {
   background-size: cover;
   
   
+  
 }
 header h1, header h2 {
   align-self: flex-start;
@@ -137,7 +148,7 @@ section {
   padding: 3% 0;
   margin: 25px 100px 25px 100px;
   text-align: left;
-  background: white;
+  background: none;
   opacity: .9;
 }
 img {
@@ -154,7 +165,6 @@ img {
 .section3 div img {
   max-height: 100%;
   max-width: 100%;
-  border: 2px solid white;
 }
  
 .projectsHeader {
@@ -169,6 +179,8 @@ img {
   font-size: 1.5em;
   background: none;
   color:#12343b;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .public {
   padding-top: 20px;
