@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(white, white,rgb(245, 238, 226));
+  background: radial-gradient(white, rgb(245, 238, 226));
 }
 .workLink {
   text-decoration: none;
@@ -17,6 +17,9 @@ body {
   align-self: center;
   color: black;
   background: #e1b382
+}
+.section3 a {
+  margin-right:20px;
 }
 .workLink:hover {
   background: #2d545e;
@@ -217,9 +220,16 @@ footer ul li a img {
     font-family: "Oswald", Sans-serif;
 
   }
-  .section4,.section5 {
-    display: none;
-  }
+.section5 {
+  display: none;
+}
+.mealScreenshot {
+  text-align: center;
+}
+.mealScreenshot img {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media only screen and (min-width: 720px){
   div {
   display: flex;
