@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(#2d545e,#12343b)
+  background: radial-gradient(white, rgb(245, 238, 226));
 }
 .workLink {
   text-decoration: none;
@@ -18,12 +18,14 @@ body {
   color: black;
   background: #e1b382
 }
-.workLink:active {
-  border: inset;
+.section3 a {
+  margin-right:20px;
 }
 .workLink:hover {
   background: #2d545e;
   color: #e1b382;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 .workLink h3:hover {
   box-shadow: 2px 2px 1.5px .75px rgb(71, 69, 69);
@@ -44,13 +46,22 @@ p {
   font-size: 18px;
 
 }
-.public h3 a {
+.repoLinks {
+  color: #12343b;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+}
+.repoLinks:hover {
+  color: #2d545e;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.public h3  {
   font-size: 35px;
   font-family: "Oswald", sans-serif;
-  text-decoration: underline;
   color: #12343b;
   margin-left: 25px;
-  cursor: pointer;
 }
 .public {
   text-align: left;
@@ -63,8 +74,16 @@ nav,
 footer {
   padding: 1% 0;
   color: black;
-  background: #c89666
-}
+  
+  }
+footer {
+    border-top: 3px solid #12343b;
+    background: linear-gradient(rgb(245, 238, 226),white,white,white);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+
+  }
 section h4{
     text-align: center;
     font-size: 2em;
@@ -72,11 +91,16 @@ section h4{
     letter-spacing: 2.5px;
 }
 nav {
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  border-bottom: 3px solid #12343b;
+  background: linear-gradient(white,white,white,rgb(245, 238, 226));
+  
+  
   
 }
 nav ul {
@@ -99,17 +123,17 @@ nav ul li a:hover{
 }
 header {
   padding: 10% 0;
-  margin: 25px auto 0 auto;
+  margin: 150px auto 50px auto;
   display: flex;
   flex-direction: column; 
-  align-items: center;
   width: 100%;
   max-height: 400px;
   color: ivory;
   background-image: url('./images/IMG_4396.JPG');
   background-size: cover;
-  opacity: .9;
-
+  
+  
+  
 }
 header h1, header h2 {
   align-self: flex-start;
@@ -117,6 +141,7 @@ header h1, header h2 {
 }
 header h1 {
   font-size: 3.5em;
+  margin-top: 50px;
 }
 header h2 {
   font-size: 1.5em;
@@ -126,7 +151,7 @@ section {
   padding: 3% 0;
   margin: 25px 100px 25px 100px;
   text-align: left;
-  background: #e1b382;
+  background: none;
   opacity: .9;
 }
 img {
@@ -139,12 +164,10 @@ img {
  display: flex;
  flex-direction: column;
  padding: 0 0;
- box-shadow: 1px 1px 1px 1px #c89666;
 }
 .section3 div img {
   max-height: 100%;
   max-width: 100%;
-  border: 2px solid white;
 }
  
 .projectsHeader {
@@ -158,12 +181,14 @@ img {
   justify-content: center;
   font-size: 1.5em;
   background: none;
-  color: ivory;
-  box-shadow: 1px 1px 3px 3px #c89666;
+  color:#12343b;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .public {
-  padding: 0;
+  padding-top: 20px;
   color: black;
+  outline: 1px solid #c89666;
 }
 .section1, .section2 {
   font-size: 18px;
@@ -195,9 +220,16 @@ footer ul li a img {
     font-family: "Oswald", Sans-serif;
 
   }
-  .section4,.section5 {
-    display: none;
-  }
+.section5 {
+  display: none;
+}
+.mealScreenshot {
+  text-align: center;
+}
+.mealScreenshot img {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media only screen and (min-width: 720px){
   div {
   display: flex;
@@ -214,19 +246,14 @@ footer ul li a img {
   .section1 {
   width: 50%;
   margin: 35px 0 0 100px;
-  border-right: 5px solid #c89666;
-  border-bottom: 10px solid #c89666;
-  border-top: 10px solid #c89666;
-  border-left: 10px solid #c89666;
+  border-right: 2.5px solid #12343b;
   
   }
   .section2 {
   width: 50%;
   margin: 35px 100px 0 0;
-  border-left: 5px solid #c89666;
-  border-top: 10px solid #c89666;
-  border-right: 10px solid #c89666;
-  border-bottom: 10px solid #c89666;
+  border-left: 2.5px solid #12343b;
+ 
   }
   .projectsHeader {
   width: 80%;
@@ -238,6 +265,9 @@ footer ul li a img {
   #publicsafety {
     font-size: 18px;
     align-self: flex-start;
+  }
+  .date {
+    color: white;
   }
   .public {
     display: flex;
