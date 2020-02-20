@@ -155,12 +155,12 @@ section {
   opacity: .9;
 }
 img {
-  max-width: 800px;
-  max-height: 600px;
-  margin: 0;
+  width: 85%;
+  margin: 0 auto;
   padding: 0;
+
 }
-.section3 {
+.section3, .section4 {
  display: flex;
  flex-direction: column;
  padding: 0 0;
@@ -226,10 +226,6 @@ footer ul li a img {
 .mealScreenshot {
   text-align: center;
 }
-.mealScreenshot img {
-  margin-left: auto;
-  margin-right: auto;
-}
 @media only screen and (min-width: 720px){
   div {
   display: flex;
@@ -280,6 +276,13 @@ footer ul li a img {
 }
 }
 @media only screen and (max-width: 420px){
+  .mealGenerator {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .mealScreenshot {
+    margin-top: 25px;
+  }
   .workLink {
     display:none;
     }
