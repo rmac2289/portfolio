@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Ross MacDonald Web Development Portfolio</title>
     <meta name="description" content="A portfolio for Ross MacDonald, a web developer based in the SF bay area">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" type="text/css" href="portfolio.css">
-    <link href="https://fonts.googleapis.com/css?family=Fauna+One|Oswald|Playfair+Display|Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fauna+One|Oswald|Playfair+Display|Quattrocento&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="body">
     <nav>
         <ul class="links">
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a id="about" href="#">about</a></li>
+            <li><a id="projects" href="#">portfolio</a></li>
+            <li><a id="contact" href="#">contact</a></li>
         </ul>
     </nav>
 
@@ -21,96 +24,107 @@
         <header role="banner">
             <h1 class="header">HI, I'M ROSS</h1>
             <h2 class="header">full stack web developer in the San Francisco bay area</h2>
-           
         </header>
         <div>
-        <section id="about" class="section1">
-            <h4>about me</h4>
-            <p> I'm a native East Coaster, ex-Midwesterner, and current West Coaster. I'm a current student in the web development track at Bloc
-                and I'm passionate about entering the field of web development. The prospect of 
-                constantly learning new techniques, methods, and technologies for the 
-                rest of my career is exciting - doing the same things over and over again is not my idea of
-                a fulfilling career.
-                <br>
-                <br> 
-                Outside of web development, 
-                I enjoy spending my time helping others and spending as much time as possible outside. I strongly
-                believe a rewarding life is built on experiences - I love visiting new places and discovering the
-                unfamiliar things that life has to offer. 
+            <section class="section1">
+                <h4>about me</h4>
+                <p> I'm a native East Coaster, ex-Midwesterner, and current West Coaster. I'm a current student in the
+                    web development track at Bloc
+                    and I'm passionate about entering the field of web development. The prospect of
+                    constantly learning new techniques, methods, and technologies for the
+                    rest of my career is exciting - doing the same things over and over again is not my idea of
+                    a fulfilling career.
+                    <br>
+                    <br>
+                    Outside of web development,
+                    I enjoy spending my time helping others and spending as much time as possible outside. I strongly
+                    believe a rewarding life is built on experiences - I love visiting new places and discovering the
+                    unfamiliar things that life has to offer.
                 </p>
-        </section>
-
-        <section class="section2">
-            <h4>experience</h4>
-            <p>My most significant career experience to this point has been in the field of 9-1-1 Emergency Dispatch.
-                I am able to quickly make decisions, 
-                take control of situations, lead effectively, communicate with team members, and deal with a highly 
-                stressful work environment. The job is essentially a continuous string of high-priority short-term 
-                deadlines that have to be met. All of this is done while efficiently manipulating multiple software systems. 
-                In addition, the people skills I have built through speaking with both citizens and public safety employees will 
-                be valuable moving forward.
-                <br>
-                <br>
-                Technically speaking - I have experience with HTML, CSS, JavaScript, and the jQuery library. I am
-                continuing to learn new methods and languages daily - I am highly adaptable and I learn quickly. I believe
-                I could be an asset on any web development team; reach out to me via my contact links below.
-            </p>
-        </section>
+            </section>
+            <section class="section2">
+                <h4>experience</h4>
+                <p>My most significant career experience to this point has been in the field of 9-1-1 Emergency
+                    Dispatch.
+                    I am able to quickly make decisions,
+                    take control of situations, lead effectively, communicate with team members, and deal with a highly
+                    stressful work environment. The job is essentially a continuous string of high-priority short-term
+                    deadlines that have to be met. All of this is done while efficiently manipulating multiple software
+                    systems.
+                    In addition, the people skills I have built through speaking with both citizens and public safety
+                    employees will
+                    be valuable moving forward.
+                    <br>
+                    <br>
+                    Technically speaking - I have experience with HTML, CSS, JavaScript, and the jQuery library. I am
+                    continuing to learn new methods and languages daily - I am highly adaptable and I learn quickly. I
+                    believe
+                    I could be an asset on any web development team; reach out to me via my contact links below.
+                </p>
+            </section>
         </div>
-        <section id="projects" class="projectsHeader">
+        <section class="projectsHeader">
             <h4>projects</h4>
         </section>
+
         <section class="section3">
             <div class="public">
-                <h3>public safety quiz</h3>
-                <p id="publicsafety">This is a simple quiz application using HTML/CSS and JavaScript via jQuery. I use jQuery to manipulate the DOM in order to:
-                    <br>- Cycle through questions 
-                    <br>- Generate questions and answers
-                    <br>- Produce feedback depending on correctness
-                    <br>- Update/display the user's score and question number
-                    <br>- Display final score with a prompt to retry the quiz
-                    <br><br>
-                    <a id="githubLink" class="repoLinks" href="https://github.com/rmac2289/quizApp">&ltgithub repo></a>
-                    <a class="repoLinks" href="https://rmac2289.github.io/quizApp/" target="_blank">&lttake quiz></a>
-                </p>
-            </div>
-            <div class="mealGenerator">
-                <img src = "./images/quizAppIncorrect.png" alt="quiz app incorrect answer">
-            </div>
-        </section>
-        <section class="section4">
-            <div class="public">
                 <h3>meal generator</h3>
-                <p id="publicsafety">This is an app using HTML/CSS, JavaScript, jQuery and calls to two separate APIs in order to:
+                <p id="publicsafety">This is an app using HTML/CSS, JavaScript, jQuery and calls to two separate APIs in
+                    order to:
                     <br>- Accept input from the user on diet restrictions
                     <br>- Produce a list of breakfast, lunch, and dinner for 7 days with links to recipes
                     <br>- Give the user nutritional information on the daily meals
                     <br>- Accept input from the user to provide ingedrients that can be substituted for one another
                     <br><br>
-                    <a id="githubLink" class="repoLinks" href="https://github.com/rmac2289/mealGenerator">&ltgithub repo></a>
-                    <a class="repoLinks" href="https://rmac2289.github.io/mealGenerator/" target="_blank">&ltlive app></a>
+                    <a id="githubLink" class="repoLinks" href="https://github.com/rmac2289/mealGenerator"
+                        target="_blank">&ltgithub repo></a>
+                    <a class="repoLinks" href="https://rmac2289.github.io/mealGenerator/" target="_blank">&ltlive
+                        app></a>
                 </p>
             </div>
-            <div  class="mealScreenshot">
-                <img src = "./Screenshots//mealscreenshot.png" alt="app landing page image">
+            <div class="mealScreenshot">
+                <img src="./Screenshots//mealscreenshot.png" alt="app landing page image">
+            </div>
+        </section>
+        <section class="section4">
+            <div class="public">
+                <h3>public safety quiz</h3>
+                <p id="publicsafety">This is a simple quiz application using HTML/CSS and JavaScript via jQuery. I use
+                    jQuery to manipulate the DOM in order to:
+                    <br>- Cycle through questions
+                    <br>- Generate questions and answers
+                    <br>- Produce feedback depending on correctness
+                    <br>- Update/display the user's score and question number
+                    <br>- Display final score with a prompt to retry the quiz
+                    <br><br>
+                    <a id="githubLink" class="repoLinks" href="https://github.com/rmac2289/quizApp"
+                        target="_blank">&ltgithub repo></a>
+                    <a class="repoLinks" href="https://rmac2289.github.io/quizApp/" target="_blank">&lttake quiz></a>
+                </p>
+            </div>
+            <div class="mealGenerator">
+                <img src="./images/quizAppIncorrect.png" alt="quiz app incorrect answer">
             </div>
         </section>
         <section class="section5">
             <h4>Project</h4>
         </section>
     </main>
-    <footer id="contact" role="contentinfo"> 
+    <footer role="contentinfo">
         <ul class="icons">
             <li id="contactMe">contact me >>></li>
-            <li><a id="git" href="https://github.com/rmac2289" target="_blank"><img src="./images/github.png" alt="github"></a></li>
-            <li><a id="linked" href="https://linkedin.com" target="_blank"><img src="./images/linkedin.png" alt="linkedIn"></a></li>
-            <li><a id="at" href="mailto:rmac2289@gmail.com" target="_blank"><img src="./images/at.png" alt="email"></a></li>
+            <li><a id="git" href="https://github.com/rmac2289" target="_blank"><img src="./images/github.png"
+                        alt="github"></a></li>
+            <li><a id="linked" href="https://linkedin.com" target="_blank"><img src="./images/linkedin.png"
+                        alt="linkedIn"></a></li>
+            <li><a id="at" href="mailto:rmac2289@gmail.com" target="_blank"><img src="./images/at.png" alt="email"></a>
+            </li>
         </ul>
     </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
